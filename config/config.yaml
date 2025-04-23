@@ -5,7 +5,7 @@ environment: development
 
 # UI configuration
 ui:
-  title: "HIG ChatGPT"
+  title: "ChatGPT"
   icon: "🤖"
   layout: "wide"
   sidebar_state: "expanded"

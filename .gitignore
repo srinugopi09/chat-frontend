@@ -84,6 +84,9 @@ src/**/*.backup[0-9]*
 backups/
 *.backup
 
+# Private documentation
+docs/changes.md
+
 # macOS
 .DS_Store
 .AppleDouble
