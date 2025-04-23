@@ -1,0 +1,28 @@
+# Logger configuration for the chat application
+# This file can be used to configure logging behavior
+
+# Environment: development, staging, production
+environment: development
+
+# Log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+log_level_file: DEBUG
+log_level_console: INFO
+
+# Log format: standard or json
+# - standard: Human-readable format
+# - json: Structured logging for easier parsing
+log_format: standard
+
+# Log rotation settings
+log_retention_days: 30
+max_log_size_mb: 10
+log_backup_count: 5
+
+# Sensitive fields to mask in logs
+sensitive_fields:
+  - aws_access_key_id
+  - aws_secret_access_key
+  - password
+  - token
+  - auth
+  - secret

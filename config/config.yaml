@@ -1,0 +1,48 @@
+# Main configuration file for the chat application
+
+# Environment: development, staging, production
+environment: development
+
+# UI configuration
+ui:
+  title: "HIG ChatGPT"
+  icon: "🤖"
+  layout: "wide"
+  sidebar_state: "expanded"
+  theme: "light"
+  # UI elements visibility
+  hide_streamlit_menu: true
+  hide_deploy_button: true
+  hide_footer: true
+  custom_styling: true
+  # Custom CSS
+  custom_css: ""
+
+# AWS configuration
+aws:
+  region: "us-east-1"
+
+# Model configuration
+models:
+  default_model: "Claude 3.5 Sonnet V2"
+  available_models:
+    "Claude 3 Sonnet": "anthropic.claude-3-sonnet-20240229-v1:0"
+    "Claude 3.5 Sonnet V2": "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
+    "Claude 3.7 V1": "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+  default_settings:
+    temperature: 0.3
+    max_tokens: 2048
+    top_p: 0.9
+    top_k: 250
+
+# Storage configuration
+storage:
+  type: "session" # session, file, database, redis
+  retention_period_days: 30
+  max_conversations: 100
+
+# Logging configuration
+# Note: This is merged with the separate logging.yaml file
+logging:
+  level: "INFO"
+  format: "standard"
